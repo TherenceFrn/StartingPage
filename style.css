@@ -1,0 +1,125 @@
+:root
+{
+    --black: #2e3047;
+    --grey: #43455C;
+    --light-grey: #707793;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:visited
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: var(--grey)
+}
+
+img
+{
+    max-width: 100%;
+}
+  
+body
+{
+    background-color: var(--black);
+    color: var(--light-grey);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper
+{
+    width: 600px;
+}
+
+.wrapper > div
+{
+    margin-bottom: 15px;
+}
+
+.img
+{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.searchbar
+{
+    width: 100%;
+}
+
+.searchbar input
+{
+    width: 100%;
+    border: none;
+    height: 30px;
+    background-color: var(--black);
+    color: var(--light-grey);
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+}
+
+.searchbar input:active,
+.searchbar input:focus,
+.searchbar input:hover
+{
+    border: none;
+    outline: none;
+}
+
+.searchbar input::placeholder
+{
+    color: var(--light-grey);
+    opacity: 1;
+    font-weight: bold;
+}
+
+.menu
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.links
+{
+    flex: 1;
+}
+
+.link
+{
+    list-style: none;
+}
+
+.clock
+{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    text-align: right;
+}
